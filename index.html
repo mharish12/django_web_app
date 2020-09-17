@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Predicting SUV purchase values</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <!--
+    <link href="myfirst_mlproject/templates/main.css" rel="stylesheet" type="text/css">
+    -->
+</head>
+
+<body>
+    <div>
+        <h1>Predicting the purchase of suv</h1>
+    </div>
+    <div class="required">
+    <form method="POST" enctype="multipart/form-data" action="predictValue" >
+        {% csrf_token %}
+        <input id="ageValue" type="text" placeholder="enter age" name="ageValue" ><br><br>
+        <input id="salaryValue" type="text" placeholder="enter salary" name="salaryValue"><br><br>
+        <input type="submit"><br><br>
+      
+        <h1>estimated value is{{estimated}}</h1>
+        
+    </form>
+    </div>
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body></html>
